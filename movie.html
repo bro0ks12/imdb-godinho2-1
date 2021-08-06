@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./src/css/styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body data-theme="light">
+    <nav>
+        <ul class="menu">
+          <li class="logo"><a href="./index.html"><img class="imdbLogo" src="src/images/imdbLogo.png"></a></li>
+          <li class="item"><a href="./about.html" style="color: white;">About</a></li>
+        </ul>
+      </nav>
+
+    <section class="movie_header forceDark">
+        <div class="wrapper">
+            <div class="topHeader">
+                <div>
+                    <h1 class="title">Ruca</h1>
+                    <span class="underTitle">2034 | +21 | 5h 32m</span>
+                </div>
+                <span class="rating"><i class="fas fa-star"style="color:rgb(255, 208, 0)!important; margin-right: 5px;"></i>65/100</span>
+            </div>
+            <span></span>
+            <div class="movie_header_media">
+                <img src="./src/images/movieTumb.jpg">
+                <iframe src="https://www.youtube.com/embed/OFlJq4MsgKM" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div>
+                    <a href="#videos">
+                        <i class="fal fa-video"></i>
+                        More videos
+                    </a>
+                    <a href="#images">
+                        <i class="fal fa-image"></i>
+                        More images
+                    </a>
+                </div>
+            </div>
+            <div class="movie_header_description">
+                <ul class="tags">
+                    <li>Drama</li>
+                    <li>Terror</li>
+                    <li>Comédia</li>
+                </ul>
+
+                <p class="synopsis">
+                    Aimed at the toddler and pre-school set, "Caillou" is an educational show that stars the 4-year-old
+                    title character (pronounced KY-YOO), who lives with his mother, father and sister in a blue house on
+                    Pine Street.
+                    Caillou has invisible friends, learns how to play sports and explores nature. Friendly
+                </p>
+
+                <div class="director">
+                    <p class="label">Director</p>
+                    <a href="">MrChico</a>
+                </div>
+
+                <div class="actors">
+                    <p class="label">Actors</p>
+                    <ul>
+                        <li><a href="">actor1</a></li>
+                        <li><a href="">actor1</a></li>
+                        <li><a href="">actor1</a></li>
+                        <li><a href="">actor1</a></li>
+                        <li><a class="secondary-link" href="#cast">More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="movie_body">
+        <div class="wrapper">
+            <!--Videos-->
+            <div class="movie_body_section">
+                <h2 id="videos" class="section_title">Videos</h2>
+                <div style="display:grid;grid-template-columns: 1fr 1fr;grid-column-gap: 10px;">
+                    <div>
+                        <iframe style="width: 100%;aspect-ratio: 16/9;" src="https://www.youtube.com/embed/OFlJq4MsgKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                    <div>
+                        <iframe style="width: 100%;aspect-ratio: 16/9;" src="https://www.youtube.com/embed/OFlJq4MsgKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Images-->
+            <div class="movie_body_section">
+                <h2 id="images" class="section_title">Images</h2>
+                <div class="swiper-container swiper4col">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img
+                                src="https://i2.wp.com/espalhafactos.com/wp-content/uploads/2021/01/Caillou.jpg?fit=770%2C483&ssl=1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://i2.wp.com/espalhafactos.com/wp-content/uploads/2021/01/Caillou.jpg?fit=770%2C483&ssl=1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://i2.wp.com/espalhafactos.com/wp-content/uploads/2021/01/Caillou.jpg?fit=770%2C483&ssl=1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://i2.wp.com/espalhafactos.com/wp-content/uploads/2021/01/Caillou.jpg?fit=770%2C483&ssl=1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://i2.wp.com/espalhafactos.com/wp-content/uploads/2021/01/Caillou.jpg?fit=770%2C483&ssl=1">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <!--Cast-->
+            <div class="movie_body_section">
+                <h2 id="cast" class="section_title">Cast</h2>
+                <ul class="castList">
+                    <li class="castMember">
+                        <img class="castMember_picture"
+                            src="https://pbs.twimg.com/profile_images/1087303987307728898/yyr4CwNs_400x400.jpg">
+                        <div class="castMember_details">
+                            <span class="name">
+                                RUCA
+                            </span>
+                            <span class="role">
+                                LUIS SILVA
+                            </span>
+                        </div>
+                    </li>
+                    <li class="castMember">
+                        <img class="castMember_picture"
+                            src="https://pbs.twimg.com/profile_images/1087303987307728898/yyr4CwNs_400x400.jpg">
+                        <div class="castMember_details">
+                            <span class="name">
+                                RUCA
+                            </span>
+                            <span class="role">
+                                LUIS SILVA
+                            </span>
+                        </div>
+                    </li>
+                    <li class="castMember">
+                        <img class="castMember_picture"
+                            src="https://pbs.twimg.com/profile_images/1087303987307728898/yyr4CwNs_400x400.jpg">
+                        <div class="castMember_details">
+                            <span class="name">
+                                RUCA
+                            </span>
+                            <span class="role">
+                                LUIS SILVA
+                            </span>
+                        </div>
+                    </li>
+                    <li class="castMember">
+                        <img class="castMember_picture"
+                            src="https://pbs.twimg.com/profile_images/1087303987307728898/yyr4CwNs_400x400.jpg">
+                        <div class="castMember_details">
+                            <span class="name">
+                                RUCA
+                            </span>
+                            <span class="role">
+                                LUIS SILVA
+                            </span>
+                        </div>
+                    </li>
+                    <li class="castMember">
+                        <img class="castMember_picture"
+                            src="https://pbs.twimg.com/profile_images/1087303987307728898/yyr4CwNs_400x400.jpg">
+                        <div class="castMember_details">
+                            <span class="name">
+                                RUCA
+                            </span>
+                            <span class="role">
+                                LUIS SILVA
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Details-->
+            <div class="movie_body_section">
+                <h2 id="details" class="section_title">Details</h2>
+                <ul class="detailsList">
+                    <li class="detailsListItem">
+                        <span class="label">Realease date</span>
+                        <ul class="content">
+                            <li>
+                                111
+                            </li>
+                            <li>
+                                111
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="detailsListItem">
+                        <span class="label">Realease date</span>
+                        <ul class="content">
+                            <li>
+                                111
+                            </li>
+                            <li>
+                                111
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="detailsListItem">
+                        <span class="label">Realease date</span>
+                        <ul class="content">
+                            <li>
+                                111
+                            </li>
+                            <li>
+                                111
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="detailsListItem">
+                        <span class="label">Realease date</span>
+                        <ul class="content">
+                            <li>
+                                111
+                            </li>
+                            <li>
+                                111
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="inner_footer">
+
+            <div class="footer_third1">
+                <a target="_blank" href="https://www.facebook.com/imdb"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/imdb/"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.twitch.tv/IMDb"><i class="fab fa-twitch"></i></a>
+                <a target="_blank" href="https://twitter.com/imdb"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.youtube.com/imdb"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="footer_third">
+                <a href="#">Site Index</a>
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Sobre</a>
+            </div>
+
+            <div class="footer_third2">
+                <p>© 2021 by Mauro ◌ Ivo ◌ Estevam</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper4col = new Swiper('.swiper4col', {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            // Optional parameters
+            direction: 'horizontal',
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

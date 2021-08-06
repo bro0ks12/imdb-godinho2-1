@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body[data-theme=dark] a, body[data-theme=dark] a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+body[data-theme=light] a, body[data-theme=light] a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+
+body[data-theme=dark]{
+  background-color: black;
+}
+body[data-theme=dark] * {
+  color:white
+}
+
+
+body[data-theme=light]{
+  background-color: white;
+}
+body[data-theme=light] * {
+  color:black
+}
+
+
+body[data-theme=dark] .ulHome li:nth-child(even) {
+  background: linear-gradient(90deg, rgba(2,0,36,0) 10%, rgb(32, 32, 32) 100%);
+}
+body[data-theme=dark] .ulHome li:nth-child(even):hover{
+  background: linear-gradient(90deg, rgba(2,0,36,0) 10%, rgb(17, 17, 17) 100%);
+}
+
+body[data-theme=light] .ulHome .li {
+  border-color : rgb(145, 145, 145);
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.forceDark *{
+  color: white!important;
+}
+
+/*Css da Navigation*/
+
+nav {
+  background: #121212;
+}
+
+nav a {
+  color: white!important;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imdbLogo {
+  width: 60px;
+}
+
+
+
+.homeSwiper{
+  margin-top: 10px;
+  padding-bottom: 30px !important;;
+}
+
+.homeSwiper .swiper-slide:hover .movieTitle{
+  color: orange;
+}
+
+.homeSwiper .swiper-slide:hover{
+  background-blend-mode:overlay;
+}
+
+.homeSwiper .swiper-button-next, .homeSwiper .swiper-button-prev {
+  top:30%
+}
+
+.homeSwiper .swiper-slide{
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.homeSwiper .swiper-content {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(10, 10, 10) 80%);
+  width: 100%;
+}
+
+.homeSwiper .movieThumb{
+  width: 200px;
+  aspect-ratio: 1/1.5;
+  margin-right: 15px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5PX;
+}
+
+.homeSwiper .movieTitle{
+  margin-bottom: 10px;
+  font-size: 30px;
+  color:white
+}
+
+/*Footer*/
+.footer {
+  bottom: 0;
+  width: 99vw;
+  display: block;
+  overflow: hidden;
+  padding: 96px 96px 30px 96px;
+  box-sizing: border-box;
+}
+.inner_footer {
+  max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+.inner_footer .footer_third {
+  text-align: center;
+  height: 100%;
+  display: block;
+  margin-top: 15px;
+}
+.inner_footer .footer_third1 {
+  text-align: center;
+  height: 100%;
+  display: block;
+  margin-bottom: 56px;
+  margin-top: -56px;
+}
+.inner_footer .footer_third1 a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  width: 100%;
+  padding-right: 40px;
+}
+.inner_footer .footer_third a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 100%;
+  padding-right: 40px;
+}
+.footer_third2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*Removedor de style UL*/
+
+ul {
+  list-style-type: none;
+}
+
+/*Lista de filmes - Home*/
+.ulHome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5,70px);
+  grid-column-gap: 10px;
+  grid-auto-flow: column;
+  list-style: none;
+  list-style-position: inside;
+}
+.ulHome .li {
+  display: flex;
+  align-items: center;
+}
+.ulHome .li:hover *{
+  color:rgb(145, 145, 145)
+}
+.ulHome .moviePosition {
+    border-color: orange;
+    border-right-style: solid;
+    border-right-width: 2px;
+    padding-right: 5px;
+    margin-right: 10px ;
+}
+.ulHome .movieThumb {
+  width: 40px;
+  aspect-ratio: 1 / 1.5;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+
+/*About.html*/
+
+.ab_fst {
+  font-size: 19px;
+  text-align: center;
+  margin-top: 14%;
+  letter-spacing: .6em;
+  animation: move 2s ease-in;
+}
+
+.ab_fst h2 {
+  font-size: 65px;
+  margin-top: 2%;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+    opacity: 0%;
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+    opacity: 20%;
+  }
+}
+
+.seta {
+  font-size: 53px;
+  text-align: center;
+  margin-top: 14%;
+  margin-bottom: 14%; 
+}
+
+.team {
+  letter-spacing: .3em;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+.team h1 {
+  margin-bottom: 1%;
+}
+
+.team p {
+  margin-bottom: 0.2%;
+}
+
+.base {
+  float: left;
+  letter-spacing: .3em;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+.base h1 {
+  margin-bottom: 1%;
+}
+
+.base p {
+  margin-bottom: 0.2%;
+}
+
+.base_imagens img {
+  margin-top: 3%;
+  max-width: 430px;
+}
+
+.utiliz {
+  float: right;
+  letter-spacing: .3em;
+  text-align: center;
+  width: 50%;
+}
+
+.utiliz h1 {
+  margin-bottom: 1%;
+}
+.utiliz p {
+  margin-bottom: 1%;
+  color: #bd1313;
+}
+
+
+
+
+
+
+
+
+
+
+
+.movie_header {
+    padding-top: 50px;
+    background-color: rgb(27, 27, 27);
+    color:white;
+}
+
+.movie_header .topHeader {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.movie_header .topHeader .title {
+    font-size: 35px;
+}
+
+.movie_header .topHeader .underTitle {
+    color:rgb(121, 121, 121);
+    font-size: 15px;
+}
+
+.movie_header .topHeader .rating {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.movie_header_media {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.movie_header_media img {
+    width: 25%;
+    margin-right: 5px;
+    border-radius: 7px;
+}
+
+.movie_header_media iframe {
+    width: 60%;
+    border-radius: 7px;
+    margin-right: 5px;
+}
+
+.movie_header_media div {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie_header_media div a{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    border-radius: 7px;
+    color: white;
+    height: -webkit-fill-available;
+    padding: 50% 0;
+}
+
+.movie_header_media div a:visited{
+    color: white;
+}
+
+.movie_header_media div a:hover{
+    background-color: rgb(59, 58, 58);
+}
+
+.movie_header_media div a:first-of-type{
+    margin-bottom: 7px;
+}
+
+.movie_header_media div a i{
+    font-size: 30px;
+}
+
+.movie_header_description .label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.movie_header_description .tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movie_header_description .tags li {
+    padding: 7px 12px;
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    border: solid;
+    border-width: thin;
+}
+
+.movie_header_description .synopsis, .director, .actors {
+    padding: 15px 0;
+}
+
+.movie_header_description .synopsis, .director {
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: rgb(121, 121, 121);
+}
+
+.movie_header_description .actors ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movie_header_description .actors ul li, .secondary-link{
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.movie_header_description .actors ul .secondary-link {
+    color: rgb(121, 121, 121);
+}
+
+
+.movie_body_section {
+    padding-bottom: 30px;
+}
+
+.section_title {
+    border-color: orange;
+    border-left-style: solid;
+    border-left-width: 5px;
+    padding-left: 10px;
+    margin: 20px 0;
+}
+
+.movie_body_section .swiper-container .swiper-slide{
+    margin-right: 10px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-color: rgb(177, 177, 177);
+    border-width: 2px;
+    border-style: solid;
+    color: white!important;
+    border-radius: 10%;
+}
+
+.swiper-button-prev:hover::after, .swiper-button-next:hover::after {
+    color: orange;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    display: none;
+}
+
+.movie_body_section .swiper-container .swiper-slide *{
+    width: 100%;
+}
+
+
+
+
+.movie_body_section .castList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.movie_body_section .castList .castMember{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.movie_body_section .castList .castMember_picture{
+    width: 60px;
+    border-radius: 100%;
+    margin-right:20px;
+}
+
+.movie_body_section .castList .castMember_details{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.movie_body_section .castList .castMember_details .name {
+    font-weight: bold;
+}
+
+.movie_body_section .castList .castMember_details .role {
+    font-size: 12px;
+    color:rgb(145, 145, 145);
+}
+
+.movie_body_section .detailsList {
+
+}
+
+.movie_body_section .detailsList .detailsListItem {
+    list-style: none;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: rgb(121, 121, 121);
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0;
+}
+
+.movie_body_section .detailsList .detailsListItem .label {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.movie_body_section .detailsList .detailsListItem .content{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.movie_body_section .detailsList .detailsListItem .content li:before{
+    display: inline-block;
+    margin: 0 .5rem .2rem;
+    content: '';
+    font-size: 1rem;
+    line-height: .5rem;
+    padding: 1px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: currentColor;
+}
+
+.movie_body_section .detailsList .detailsListItem .content li:first-of-type:before{
+    display: none;
+}
+
+.movie_header a, .movie_header a:visited {
+  color:rgb(0, 119, 255)!important
+}
+
+.movie_header .secondary-link {
+  color:rgb(138, 138, 138)!important
+}
+
+
+.movie_header a:hover {
+  color:white!important
+}
